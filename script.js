@@ -17,11 +17,12 @@ function addExpense() {
   const category = categoryInput.value;
   const amount = parseFloat(amountInput.value);
   const date = dateInput.value;
-   if (!amount){
-    alert('Please enter an amount');
+   if (!amount || !description  || !date || !category){
+    alert('Please fill all inputs');
     return
    }
   else if (amount > 0) {
+    alert('Welldone')
     const expense = {
       description,
       category,
@@ -29,7 +30,7 @@ function addExpense() {
       date
     };
 
-    expenses.push(expense);
+    expenses.push(expense); 
     updateSummary();
     updateExpensesTable();
   }
