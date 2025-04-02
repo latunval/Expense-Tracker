@@ -51,3 +51,16 @@ button {
 button:hover{
     background-color: #00f;
 }
+
+@media screen and (max-width:768px){
+    .container {
+        width: 90%;
+    }
+    form {
+        width: 100%;
+    }
+     tr{
+font-size: 0.7rem;
+    }
+   
+}
